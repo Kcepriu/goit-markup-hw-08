@@ -1,0 +1,58 @@
+$colors: (
+  'text-primary': #757575,
+  'text-title': #212121,
+  'text-footer': rgb(255 255 255 / 0.6),
+  'text-input-modal': rgba(117, 117, 117, 0.5),
+  'accent': #2196f3,
+  'logo-header': #000000,
+
+  'white-primary': #ffffff,
+  'primary-color-icon': #afb1b8,
+
+  'background-primary': #ffffff,
+  'background-second': #f5f4fa,
+  'background-dark': #2f303a,
+  'background-hover-btn': #188ce8,
+
+  'border-header': #ececec,
+  'border-portfolio-border': #eeeeee,
+);
+
+// getColor('accent');
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$shadows: (
+  'shadow-card-team': '0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),  0px 2px 1px rgba(0, 0, 0, 0.2)',
+
+  'shadow-portfolio-card': '0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)',
+
+  'shadow-btn-filter': '0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)',
+
+  'shadow-btn-hero': '0px 4px 4px rgba(0, 0, 0, 0.15)',
+
+  'shadow-modal-windows': '0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)',
+);
+
+@function getShadow($key) {
+  @return map-get($shadows, $key);
+}
+
+
+$duration-primary: 250ms;
+$timing-function-primary: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+$count-items: 3;
+$indent-primary: 30px;
+
+$padding-container: 15px;
+$padding-section: 94px;
+
+$width-container: 1200px;
+
+$border-radius-primary: 4px;
+
+$background-gradient-hero: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+$background-image-hero: url(../images/hero-background.jpg);

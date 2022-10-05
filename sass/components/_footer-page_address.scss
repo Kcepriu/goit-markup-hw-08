@@ -1,0 +1,32 @@
+.address__wrap {
+  width: 231px;
+}
+
+.address__list {
+  @extend %list;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.addres__link {
+  @extend %link;
+
+  color: getColor('text-footer');
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+
+  transition: color $duration-primary $timing-function-primary;
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+
+}
+
+.addres__link--map {
+  color: getColor('white-primary');
+}

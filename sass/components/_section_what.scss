@@ -1,0 +1,40 @@
+.section-what {
+  @extend %section;
+}
+
+.section-what__title {
+  @extend %title-section;
+}
+
+.card-what__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-what__item {
+  position: relative;
+}
+
+.card-what__img {
+  @extend %img;
+}
+
+.card-what__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 27px 5px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor('white-primary');
+
+  background: rgba(47, 48, 58, 0.8);
+}

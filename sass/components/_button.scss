@@ -1,0 +1,37 @@
+.button {
+  min-width: 73px;
+  padding: 6px 22px;
+
+  color: getColor('text-title');
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  font-family: inherit;
+  letter-spacing: inherit;
+
+  background-color: getColor('background-second');
+  
+  cursor: pointer;
+
+  border: none;
+  border-radius: $border-radius-primary;
+}
+
+.button--primary {
+  @extend .button;
+
+  color: getColor('white-primary');
+
+  background-color: getColor('accent');
+  letter-spacing: 0.06em;
+
+  transition: background-color $duration-primary $timing-function-primary;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  background-color: getColor('background-hover-btn');
+}

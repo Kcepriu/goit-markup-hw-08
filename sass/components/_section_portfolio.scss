@@ -1,0 +1,123 @@
+.section-portfolio {
+  @extend %section;
+}
+
+.section-portfolio__title {
+  @extend %visually-hidden;
+}
+
+// btn filters
+.filter_list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filter_item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter_btn {
+  @extend .button;
+
+  transition: color $duration-primary $timing-function-primary,
+    background-color $duration-primary $timing-function-primary,
+    box-shadow $duration-primary $timing-function-primary;
+
+  &:hover,
+  &:focus {
+    color: getColor('white-primary');
+    background-color: getColor('accent');
+    box-shadow: #{getShadow('shadow-btn-filter')};
+  }
+}
+
+// portfolio-card list
+.portfolio-card__list {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: $indent-primary;
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.portfolio-card__item {
+  flex-basis: calc((100% - ($count-items - 1) * $indent-primary) / $count-items);
+}
+
+
+.portfolio-card__img {
+  @extend %img;
+}
+
+.portfolio-card__link {
+  @extend %link;
+
+  display: block;
+  transition: box-shadow $duration-primary $timing-function-primary;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: #{getShadow('shadow-portfolio-card')};
+  }
+}
+
+.portfolio-card__body {
+  padding: 20px 24px;
+  margin: 0;
+
+  border-left: 1px solid getColor('border-portfolio-border');
+  border-right: 1px solid getColor('border-portfolio-border');
+  border-bottom: 1px solid getColor('border-portfolio-border');
+}
+
+.portfolio-card__figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: getColor('white-primary');
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+
+  transition: transform $duration-primary $timing-function-primary;
+
+  .portfolio-card__link:hover &,
+  .portfolio-card__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-card__title {
+  color: getColor('text-title');
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}

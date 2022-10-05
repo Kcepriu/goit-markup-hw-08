@@ -1,0 +1,57 @@
+.section-team {
+  @extend %section;
+  font-size: 16px;
+  line-height: 1.19;
+  background-color: getColor('background-second');
+}
+
+.section-team__title {
+  @extend %title-section;
+}
+
+.card-team__list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-team__caption {
+  padding: $indent-primary 10px;
+  text-align: center;
+}
+
+.card-team__img {
+  @extend %img;
+}
+
+.card-team__title {
+  margin-bottom: 10px;
+  color: getColor('text-title');
+  /* font-size - не наслідує з попереднього. Чомусь перекриває h3 таблиці стлів користувача */
+  font-size: 16px;
+  line-height: 1.19;
+  font-weight: 500;
+}
+
+.card-team__item {
+  background-color: getColor('background-primary');
+  border-bottom-right-radius: $border-radius-primary;
+  border-bottom-left-radius: $border-radius-primary;
+  box-shadow: #{getShadow('shadow-card-team')};
+}
+
+.card-team__content {
+  margin-bottom: 16px;
+}
+
+// Socials cards
+.card-team__link-socials {
+  color: getColor('primary-color-icon');
+
+  &:hover,
+  &:focus {
+    color: getColor('white-primary');
+  }
+
+}

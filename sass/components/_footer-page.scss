@@ -1,0 +1,22 @@
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: getColor('background-dark');
+  margin: 0 auto;
+}
+
+.footer-page__container {
+  display: flex;
+}
+
+.footer-page__logo {
+  margin-bottom: 20px;
+  display: inline-block;
+
+  color: getColor('white-primary');
+}
+
+@import './footer-page_address';
+@import './footer-page_socials';
+@import './footer-page_form';
