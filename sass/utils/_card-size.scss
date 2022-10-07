@@ -1,11 +1,16 @@
-%card-max-width {
-  max-width: 100%;
+@mixin card-max-width($count-mobile, $count-table, $count-desktop) {
+
+  max-width: getWidth($count-mobile, $indent-primary);
 
   @media screen and (min-width: $tablet) {
-    max-width: calc((100% - $indent-primary)/2);
+    max-width: getWidth($count-table, $indent-primary);
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: calc((100% - 3*$indent-primary)/4);
+    max-width: getWidth($count-desktop, $indent-primary);
   }
+}
+
+@function getWidth($count, $indent) {
+  @return calc((100% - ($count - 1) * $indent) / $count);
 }

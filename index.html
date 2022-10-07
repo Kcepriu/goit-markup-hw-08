@@ -395,7 +395,7 @@
       </section>
 
       <!-- Section our clients -->
-      <section class="section-clients nodisplay">
+      <section class="section-clients">
         <div class="container">
           <h2 class="section-clients__title">Постійні клієнти</h2>
 
@@ -448,80 +448,82 @@
     </main>
 
     <!-- Section Footer -->
-    <footer class="footer-page nodisplay">
+    <footer class="footer-page">
       <div class="container footer-page__container">
-        <!-- Group adress -->
-        <div class="address__wrap">
-          <a class="logo footer-page__logo" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address id="address">
-            <ul class="address__list">
-              <li class="address__item">
-                <a
-                  class="addres__link addres__link--map"
-                  href="https://goo.gl/maps/1251z9xFFSoEzvaf6"
-                  target="_blank"
-                  rel="noreferrer noopener, nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-page__wrap">
+          <!-- Group adress -->
+          <div class="footer-page__address">
+            <a class="logo footer-page__logo" href="./index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="address" id="address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="addres__link addres__link--map"
+                    href="https://goo.gl/maps/1251z9xFFSoEzvaf6"
+                    target="_blank"
+                    rel="noreferrer noopener, nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+
+                <li class="address__item">
+                  <a class="addres__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+
+                <li class="address__item">
+                  <a class="addres__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Group socials -->
+          <div class="footer-page__socials socials-footer">
+            <h3 class="socials-footer__title">Приєднуйтесь</h3>
+
+            <ul class="socials__list socials-footer__list">
+              <li class="socials__item">
+                <a class="socials__link" href="" aria-label="Instagramm">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="address__item">
-                <a class="addres__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="socials__item">
+                <a class="socials__link" href="" aria-label="Twiter">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="address__item">
-                <a class="addres__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a class="socials__link" href="" aria-label="Facebook">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link" href="" aria-label="Linkedin">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <!-- Group socials -->
-        <div class="socials-footer__wrap">
-          <h3 class="socials-footer__title">Приєднуйтесь</h3>
-
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link" href="" aria-label="Instagramm">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="" aria-label="Twiter">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="" aria-label="Facebook">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link" href="" aria-label="Linkedin">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <!-- Group subscribe -->
-        <div class="form-footer__wrap">
+        <div class="footer-page__form form-footer">
           <h3 class="form-footer__title">Підпишіться на розсилку</h3>
 
-          <form name="subscribe">
+          <form class="form-footer__wrap" name="subscribe">
             <label class="form-footer__label" for="user-email">E-mail</label>
 
             <input

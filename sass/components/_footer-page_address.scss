@@ -1,7 +1,3 @@
-.address__wrap {
-  width: 231px;
-}
-
 .address__list {
   @extend %list;
 }
@@ -12,6 +8,8 @@
 
 .addres__link {
   @extend %link;
+
+  width: 100%;
 
   color: getColor('text-footer');
   font-size: 14px;

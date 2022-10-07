@@ -9,10 +9,13 @@
 .card-client__list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
+  gap: $indent-primary;
 }
 
-.card-client__item:not(:last-child) {
-  margin-right: $indent-primary;
+.card-client__item {
+  width: 100%;
+  @include card-max-width(2, 3, 6);
 }
 
 .card-client__icon {
@@ -30,7 +33,7 @@
 
   color: getColor('primary-color-icon');
 
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid getColor('primary-color-icon');
 

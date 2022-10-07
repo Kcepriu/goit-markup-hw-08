@@ -53,7 +53,7 @@
   border-bottom-left-radius: $border-radius-primary;
   box-shadow: #{getShadow('shadow-card-team')};
 
-  @extend %card-max-width;
+  @include card-max-width(1, 2, 4);
 
 }
 

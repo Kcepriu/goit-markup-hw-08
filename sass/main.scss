@@ -1,5 +1,7 @@
 @import './utils/breakpoints';
 @import './utils/variables';
+@import './utils/templates';
+
 @import './utils/global';
 @import './utils/card-size';
 
@@ -22,7 +24,7 @@
 
 @import './components/section_portfolio';
 
-
+// TODO deleted
 .nodisplay {
   display: none !important;
 }

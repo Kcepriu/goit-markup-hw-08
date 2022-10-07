@@ -28,7 +28,7 @@
 }
 
 .card-benefit__item {
-  @extend %card-max-width;
+  @include card-max-width(1, 2, 4);
 }
 
 .card-benefit__icon {

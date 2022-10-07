@@ -17,9 +17,9 @@
   display: none;
   align-items: center;
 
-  // @media screen and (min-width:$tablet) {
-  //   display: flex;
-  // }
+  @media screen and (min-width:$tablet) {
+    display: block;
+  }
 }
 
 // header-page__list
