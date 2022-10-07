@@ -6,10 +6,20 @@
 .header-page__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-page__logo {
   margin-right: 93px;
+}
+
+.header-page__menu {
+  display: none;
+  align-items: center;
+
+  // @media screen and (min-width:$tablet) {
+  //   display: flex;
+  // }
 }
 
 // header-page__list

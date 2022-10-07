@@ -1,0 +1,11 @@
+%card-max-width {
+  max-width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    max-width: calc((100% - $indent-primary)/2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: calc((100% - 3*$indent-primary)/4);
+  }
+}

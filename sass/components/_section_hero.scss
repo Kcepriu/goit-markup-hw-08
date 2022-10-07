@@ -3,18 +3,45 @@
   letter-spacing: 0.06em;
 
   background-color: getColor('background-dark');
-  background-image: $background-gradient-hero, $background-image-hero;
+  // background-image: $background-gradient-hero, $background-image-hero;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  max-width: 1600px;
+
+  max-width: $mobile;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+  }
+
 }
 
 .hero__container {
   display: inline-block;
-  padding: 200px 252px;
+
+  padding: 60px 60px;
+
+  @media screen and (min-width: $mobile) {
+    padding: 118px 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 118px 204px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 200px 252px;
+  }
 }
 
 .hero__title {
@@ -23,18 +50,28 @@
 
   color: getColor('white-primary');
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
 }
 
 .hero__button {
   @extend .button--primary;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   box-shadow: #{getShadow('shadow-btn-hero')};
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
+  }
 }

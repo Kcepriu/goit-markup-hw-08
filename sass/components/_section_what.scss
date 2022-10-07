@@ -1,5 +1,12 @@
 .section-what {
   @extend %section;
+
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+
 }
 
 .section-what__title {

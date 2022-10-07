@@ -14,15 +14,28 @@
 
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: $indent-primary;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .card-team__caption {
-  padding: $indent-primary 10px;
+  padding: $indent-primary 10px 24px 10px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: $indent-primary;
+  }
 }
 
 .card-team__img {
   @extend %img;
+
+  width: 100%;
 }
 
 .card-team__title {
@@ -39,6 +52,9 @@
   border-bottom-right-radius: $border-radius-primary;
   border-bottom-left-radius: $border-radius-primary;
   box-shadow: #{getShadow('shadow-card-team')};
+
+  @extend %card-max-width;
+
 }
 
 .card-team__content {

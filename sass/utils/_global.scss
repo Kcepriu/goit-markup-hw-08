@@ -19,7 +19,7 @@ p {
 
 // * {
 //   outline: 1px solid red;
-// } 
+// }
 
 %img {
   display: block;
@@ -53,6 +53,11 @@ p {
 %section {
   padding-top: $padding-section;
   padding-bottom: $padding-section;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: $padding-section-desktop;
+    padding-bottom: $padding-section-desktop;
+  }
 }
 
 %title-section {

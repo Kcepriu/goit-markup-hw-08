@@ -1,5 +1,7 @@
+@import './utils/breakpoints';
 @import './utils/variables';
 @import './utils/global';
+@import './utils/card-size';
 
 @import './components/button';
 @import './components/container';
@@ -19,3 +21,8 @@
 @import './components/modal-window';
 
 @import './components/section_portfolio';
+
+
+.nodisplay {
+  display: none !important;
+}
