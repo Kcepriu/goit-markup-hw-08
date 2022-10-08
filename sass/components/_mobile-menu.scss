@@ -1,0 +1,19 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+
+  padding: 48px 40px;
+
+  transform: translateX(100%);
+  background-color: getColor('white-primary');
+
+  transition: transform $duration-primary $timing-function-primary;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}

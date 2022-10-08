@@ -6,7 +6,11 @@
 .header-page__container {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
+
+  @media screen and (min-width:$tablet) {
+    justify-content: left;
+  }
 }
 
 .header-page__logo {
@@ -94,9 +98,7 @@
     max-width: 142px;
   }
 
-  background-color: blue;
 }
-
 
 .header-page__link--second {
   color: getColor('text-primary');
@@ -107,4 +109,23 @@
   @media screen and (max-width:$desktop) {
     padding: 0;
   }
+}
+
+//btn-mobile-menu
+.header-page__btn-mobile-menu {
+  padding: 10px 0;
+  border: none;
+  background-color: getColor('white-primary');
+
+  @media screen and (min-width:$tablet) {
+    display: none;
+  }
+}
+
+.header-page__icon-open-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  fill: #000;
 }
