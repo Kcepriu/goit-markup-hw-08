@@ -10,13 +10,16 @@
 .filter_list {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  row-gap: 15px;
+  column-gap: 8px;
 
   margin-bottom: 50px;
-}
 
-.filter_item:not(:last-child) {
-  margin-right: 8px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }
 
 .filter_btn {
@@ -48,12 +51,13 @@
 }
 
 .portfolio-card__item {
-  flex-basis: calc((100% - ($count-items - 1) * $indent-primary) / $count-items);
+  @include card-max-width(1, 2, 3);
 }
 
 
 .portfolio-card__img {
   @extend %img;
+  width: 450px;
 }
 
 .portfolio-card__link {

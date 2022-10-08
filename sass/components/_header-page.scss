@@ -6,19 +6,24 @@
 .header-page__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .header-page__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+
+  @media screen and (min-width:$desktop) {
+    margin-right: 93px;
+  }
 }
 
 .header-page__menu {
   display: none;
-  align-items: center;
 
   @media screen and (min-width:$tablet) {
-    display: block;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -27,15 +32,12 @@
 .header-page__list {
   @extend %list;
   display: flex;
+  column-gap: 50px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.header-page__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header-page__link {
@@ -81,15 +83,28 @@
 
 // List i-contacts
 .header-page__list--second {
-  margin-left: auto;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 10px;
+
+  @media screen and (max-width:$desktop) {
+    font-size: 12px;
+    line-height: 1.17;
+    padding: 21px 0;
+    max-width: 142px;
+  }
+
+  background-color: blue;
 }
 
-.header-page__item--second:not(:last-child) {
-  margin-right: 30px;
-}
 
 .header-page__link--second {
   color: getColor('text-primary');
   display: flex;
   align-items: center;
+
+
+  @media screen and (max-width:$desktop) {
+    padding: 0;
+  }
 }
