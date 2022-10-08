@@ -34,12 +34,12 @@
           <nav>
             <ul class="header-page__list">
               <li class="header-page__item">
-                <a class="header-page__link header-page__link--current" href="./index.html"
-                  >Студія</a
-                >
+                <a class="header-page__link" href="./index.html">Студія</a>
               </li>
               <li class="header-page__item">
-                <a class="header-page__link" href="./portfolio.html">Портфоліо</a>
+                <a class="header-page__link header-page__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="header-page__item">
                 <a class="header-page__link" href="#address">Контакти</a>
@@ -69,6 +69,16 @@
             </li>
           </ul>
         </div>
+        <button
+          class="header-page__btn-mobile-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header-page__icon-open-menu" width="40">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -397,5 +407,59 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn js-close-menu">
+        <svg class="mobile-menu__icon" width="40">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list mobile-menu__list--first">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--curent" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#address">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__list mobile-menu__list--second">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--accent" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__list mobile-menu__list--socials">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link--socials" href="" aria-label="Instagramm">Instagramm</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link--socials" href="" aria-label="Twiter">Twiter</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link--socials" href="" aria-label="Facebook">Facebook</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link--socials" href="" aria-label="Linkedin">Linkedin</a>
+        </li>
+      </ul>
+      <script src="./js/mobile-menu.js"></script>
+    </div>
   </body>
 </html>
