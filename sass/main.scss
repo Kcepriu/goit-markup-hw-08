@@ -7,23 +7,24 @@
 
 @import './components/button';
 @import './components/container';
-@import './components/socials_list';
+@import './components/socials-list';
 
 @import './components/header-page';
 @import './components/logo';
 
-@import './components/section_hero';
-@import './components/section_benefits';
-@import './components/section_what';
-@import './components/section_team';
-@import './components/section_clients';
+@import './components/section-hero_background';
+@import './components/section-hero';
+@import './components/section-benefits';
+@import './components/section-what';
+@import './components/section-team';
+@import './components/section-clients';
 
 @import './components/footer-page';
 
 @import './components/modal-window';
 @import './components/mobile-menu';
 
-@import './components/section_portfolio';
+@import './components/section-portfolio';
 
 // TODO deleted
 .nodisplay {

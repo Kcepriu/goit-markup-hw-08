@@ -1,0 +1,47 @@
+@mixin background-hero {
+  background-image: $background-gradient-hero,
+    getFullNameToBackground(480);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+    background-image: $background-gradient-hero,
+      getFullNameToBackground(480, '@2x');
+  }
+
+  @media (min-width: 577px) {
+    background-image: $background-gradient-hero,
+      getFullNameToBackground(768);
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+      background-image: $background-gradient-hero,
+        getFullNameToBackground(768, '@2x');
+    }
+  }
+
+  @media (min-width: 960px) {
+    background-image: $background-gradient-hero,
+      getFullNameToBackground(1600);
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+      background-image: $background-gradient-hero,
+        getFullNameToBackground(1600, '@2x');
+    }
+
+
+  }
+}
+
+@function getFullNameToBackground($size, $sufix: '') {
+  $path: #{$background-image-hero_path}#{$background-image-hero_file-name};
+  @return url(#{$path}-#{$size}#{$sufix}.jpg);
+}

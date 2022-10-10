@@ -3,7 +3,9 @@
   letter-spacing: 0.06em;
 
   background-color: getColor('background-dark');
+
   // background-image: $background-gradient-hero, $background-image-hero;
+  @include background-hero();
 
   background-repeat: no-repeat;
   background-position: center;

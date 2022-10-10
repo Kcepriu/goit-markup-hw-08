@@ -21,6 +21,7 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  overflow: hidden
 }
 
 .mobile-menu__btn {
