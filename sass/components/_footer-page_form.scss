@@ -2,7 +2,7 @@
   text-align: center;
   padding-top: 0;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     text-align: left;
     padding-top: 15px;
   }
@@ -21,7 +21,7 @@
 
   color: getColor('white-primary');
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     text-align: left;
   }
 }
@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     flex-direction: row;
   }
 }
@@ -64,11 +64,11 @@
     border-color: getColor('accent');
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     width: 450px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     margin-bottom: 0;
     width: 358px;
   }

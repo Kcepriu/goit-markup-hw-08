@@ -1,7 +1,7 @@
 .section-benefits {
   @extend %section;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     padding-bottom: 0;
   }
 }
@@ -21,7 +21,7 @@
   font-size: 14px;
   line-height: 1.71;
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     flex-direction: row;
     flex-wrap: wrap;
   }

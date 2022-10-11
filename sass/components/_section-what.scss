@@ -3,10 +3,9 @@
 
   display: none;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     display: block;
   }
-
 }
 
 .section-what__title {

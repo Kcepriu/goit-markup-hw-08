@@ -31,7 +31,7 @@
   padding-top: $padding-section;
   padding-bottom: $padding-section;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     padding-top: $padding-section-desktop;
     padding-bottom: $padding-section-desktop;
   }
@@ -46,7 +46,7 @@
   line-height: 1.18;
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     margin-bottom: 50px;
 
     font-size: 36px;

@@ -18,7 +18,7 @@
   transform: translateX(100%);
   transition: transform $duration-primary $timing-function-primary;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     padding: 24px 20px 52px 20px;
     gap: 32px;
   }
@@ -71,7 +71,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     gap: 16px;
   }
 }
@@ -87,7 +87,7 @@
   font-size: 40px;
   line-height: 1.18;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     font-size: 32px;
   }
 }
@@ -96,7 +96,7 @@
   font-size: 24px;
   line-height: 1.17;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     font-size: 19px;
   }
 }
@@ -109,7 +109,7 @@
   font-size: 18px;
   line-height: 1.22;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     flex-wrap: wrap;
   }
 }
@@ -124,7 +124,7 @@
   font-size: 34px;
   line-height: 1.18;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     font-size: 27px;
   }
 }

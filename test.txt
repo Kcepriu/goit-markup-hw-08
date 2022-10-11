@@ -39,6 +39,8 @@ $desktop: 1200px;
 }
 }
 
-} @include mq(tab) {
+} 
+
+@include mq(tab) {
 justify-content: center;
 } 

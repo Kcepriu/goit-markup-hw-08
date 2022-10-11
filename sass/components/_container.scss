@@ -7,15 +7,15 @@
 
   width: 100%;
 
-  @media screen and (min-width: $mobile) {
+  @include mq(mob) {
     max-width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     max-width: $tablet;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     max-width: $desktop;
   }
 }

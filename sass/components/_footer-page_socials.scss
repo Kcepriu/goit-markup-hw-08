@@ -10,7 +10,7 @@
 
   color: getColor('white-primary');
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     text-align: left;
   }
 }

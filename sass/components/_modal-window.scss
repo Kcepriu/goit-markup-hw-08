@@ -46,11 +46,11 @@
 
   transition: transform $duration-primary $timing-function-primary;
 
-  @media screen and (max-width: $mobile-min) {
+  @include mq(mob-min) {
     padding: 20px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     max-width: 528px;
     max-height: 581px;
   }
@@ -100,7 +100,7 @@
 
   color: getColor('text-title');
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     line-height: 1.15;
   }
 
@@ -237,7 +237,7 @@
     gap: 10px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     font-size: 14px;
     line-height: 1.71;
   }

@@ -2,11 +2,11 @@
 
   max-width: getWidth($count-mobile, $indent-primary);
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     max-width: getWidth($count-table, $indent-primary);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     max-width: getWidth($count-desktop, $indent-primary);
   }
 }

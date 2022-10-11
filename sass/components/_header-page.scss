@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width:$tablet) {
+  @include mq(tab) {
     justify-content: left;
   }
 }
@@ -16,7 +16,7 @@
 .header-page__logo {
   margin-right: 88px;
 
-  @media screen and (min-width:$desktop) {
+  @include mq(desk) {
     margin-right: 93px;
   }
 }
@@ -24,7 +24,7 @@
 .header-page__menu {
   display: none;
 
-  @media screen and (min-width:$tablet) {
+  @include mq(tab) {
     display: flex;
     flex-basis: 100%;
     justify-content: space-between;
@@ -91,7 +91,7 @@
   column-gap: 30px;
   row-gap: 10px;
 
-  @media screen and (max-width:$desktop) {
+  @include mq(not-desk) {
     font-size: 12px;
     line-height: 1.17;
     padding: 21px 0;
@@ -105,8 +105,7 @@
   display: flex;
   align-items: center;
 
-
-  @media screen and (max-width:$desktop) {
+  @include mq(not-desk) {
     padding: 0;
   }
 }
@@ -117,7 +116,7 @@
   border: none;
   background-color: getColor('white-primary');
 
-  @media screen and (min-width:$tablet) {
+  @include mq(tab) {
     display: none;
   }
 }

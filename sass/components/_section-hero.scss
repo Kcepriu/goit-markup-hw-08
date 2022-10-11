@@ -14,15 +14,15 @@
 
   max-width: $mobile;
 
-  @media screen and (min-width: $mobile) {
+  @include mq(mob) {
     max-width: $tablet;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     max-width: $desktop;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     max-width: 1600px;
   }
 
@@ -33,15 +33,15 @@
 
   padding: 60px 60px;
 
-  @media screen and (min-width: $mobile) {
+  @include mq(mob) {
     padding: 118px 60px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include mq(tab) {
     padding: 118px 204px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     padding: 200px 252px;
   }
 }
@@ -56,7 +56,7 @@
   line-height: 1.62;
   text-transform: uppercase;
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     font-size: 44px;
     line-height: 1.36;
   }
@@ -73,7 +73,7 @@
   line-height: 1.88;
   box-shadow: #{getShadow('shadow-btn-hero')};
 
-  @media screen and (min-width: $desktop) {
+  @include mq(desk) {
     padding: 10px 32px;
   }
 }

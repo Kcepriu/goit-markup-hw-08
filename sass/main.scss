@@ -1,4 +1,4 @@
-@import './utils/breakpoints';
+@import './utils/media_query';
 @import './utils/variables';
 @import './utils/templates';
 
@@ -25,8 +25,3 @@
 @import './components/mobile-menu';
 
 @import './components/section-portfolio';
-
-// TODO deleted
-.nodisplay {
-  display: none !important;
-}
