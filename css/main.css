@@ -394,7 +394,7 @@ p {
 
 .hero__container {
   display: inline-block;
-  padding: 60px 60px;
+  padding: 10px 10px;
 }
 @media screen and (min-width: 480px) {
   .hero__container {
@@ -745,6 +745,9 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -794,7 +797,6 @@ p {
 @media screen and (min-width: 768px) {
   .footer-page__socials {
     width: 206px;
-    padding-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1034,6 +1036,11 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 400px) {
+  .modal-window__title {
+    padding: 0 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-window__title {
@@ -1378,6 +1385,10 @@ p {
   .mobile-menu__link--accent {
     font-size: 27px;
   }
+}
+
+.mobile-menu__link--second {
+  color: #757575;
 }
 
 .mobile-menu__link--socials {

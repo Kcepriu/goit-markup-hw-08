@@ -129,6 +129,10 @@
   }
 }
 
+.mobile-menu__link--second {
+  color: getColor('text-primary');
+}
+
 .mobile-menu__link--socials {
   @extend %link;
   color: getColor('accent');

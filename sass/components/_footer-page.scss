@@ -36,6 +36,8 @@
   @include mq(tab) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    // outline: 1px solit red;
 
   }
 
@@ -81,7 +83,7 @@
 
   @include mq(tab) {
     width: 206px;
-    padding-top: 5px;
+    // padding-top: 5px;
   }
 
   @include mq(desk) {

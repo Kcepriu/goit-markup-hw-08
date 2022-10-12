@@ -100,6 +100,10 @@
 
   color: getColor('text-title');
 
+  @include mq('mob-min') {
+    padding: 0 20px;
+  }
+
   @include mq(desk) {
     line-height: 1.15;
   }
