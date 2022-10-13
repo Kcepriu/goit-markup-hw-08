@@ -1,4 +1,7 @@
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -23,6 +26,9 @@
   }
 
   @include mq(desk) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     max-width: 1600px;
   }
 
@@ -31,18 +37,22 @@
 .hero__container {
   display: inline-block;
 
-  padding: 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @include mq(mob) {
-    padding: 118px 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @include mq(tab) {
-    padding: 118px 204px;
+    padding-left: 204px;
+    padding-right: 204px;
   }
 
   @include mq(desk) {
-    padding: 200px 252px;
+    padding-left: 252px;
+    padding-right: 252px;
   }
 }
 
